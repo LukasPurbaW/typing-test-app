@@ -44,57 +44,16 @@ export default function Footer() {
 
 	return (
 		<div className={`bottom-area ${timerId ? "hidden" : ""}`}>
-			<span className="hint">
-				<kbd>Ctrl</kbd> + <kbd>k</kbd> to open command pallet
-			</span>
-			<span className="hint">
-				<kbd>Tab</kbd> to restart test
-			</span>
 			<footer>
-				<a
-					target="_blank"
-					rel="noreferrer"
-					href="https://www.github.com/salmannotkhan/typing-test">
-					<span>&lt;/&gt;</span> github
-				</a>
 				<span>
 					created by{" "}
 					<a
 						target="_blank"
 						rel="noreferrer"
-						href="https://www.github.com/salmannotkhan">
-						@salmannotkhan
+						href="https://github.com/LukasPurbaW">
+						@lukaspurbaw
 					</a>
 				</span>
-				{showList ? (
-					<div className="contributor-list" onBlur={console.log}>
-						<h2>contributors</h2>
-						{contributors.map((contributor) => (
-							<a
-								className="contributor"
-								href={contributor.html_url}
-								target="_blank"
-								rel="noreferrer"
-								key={contributor.node_id}>
-								<img
-									height={50}
-									width={50}
-									src={contributor.avatar_url}
-									alt={`${contributor.login}'s avatar`}
-								/>
-								<div className="contributor-details">
-									<div>@{contributor.login}</div>
-									<div>
-										{contributor.contributions} commits
-									</div>
-								</div>
-							</a>
-						))}
-					</div>
-				) : null}
-				<button onClick={() => setShowList((s) => !s)}>
-					{showList ? "x close" : "{} contributors"}
-				</button>
 			</footer>
 		</div>
 	);

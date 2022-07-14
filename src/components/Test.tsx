@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setRef, setCaretRef } from "store/actions";
 import { State } from "store/reducer";
 import "stylesheets/Test.scss";
+import "stylesheets/Footer.scss";
 
 export default function Test() {
 	const {
@@ -21,7 +22,7 @@ export default function Test() {
 
 	return (
 		<div className="test">
-			<div className="timer">{timer}</div>
+			<div className="timer">{timer}</div>{" "}
 			<div className="box">
 				{wordList.map((word, idx) => {
 					const isActive =
@@ -75,6 +76,12 @@ export default function Test() {
 					);
 				})}
 			</div>
+			<span className="hint">
+				<kbd>Ctrl</kbd> + <kbd>k</kbd> to open command pallet
+			</span>
+			<span className="hint-2">
+				<kbd>Tab</kbd> to restart test
+			</span>
 		</div>
 	);
 }

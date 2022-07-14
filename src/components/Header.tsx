@@ -27,17 +27,16 @@ interface AnimationProps {
 export const options: Options = {
 	time: [15, 30, 45, 60, 120],
 	theme: [
-		"default",
-		"mkbhd",
-		"mocha",
-		"coral",
-		"ocean",
-		"azure",
-		"forest",
-		"rose-milk",
-		"amethyst",
+		"suisei",
+		"chloe",
+		"okayu",
+		"iroha",
+		"mori",
+		"kroni",
+		"moona",
+		"kobo",
 	],
-	type: ["words", "sentences", "numbers"],
+	type: ["words-id", "words-en", "words-jp"],
 };
 
 export default function Header() {
