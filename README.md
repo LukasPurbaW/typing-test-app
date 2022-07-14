@@ -1,6 +1,6 @@
 # typing-test
 
-NOTE: This is my version of already existing [typing-test](hhttps://salmannotkhan.github.io/typing-test/)
+NOTE: This is my version of already existing [https://salmannotkhan.github.io/typing-test/](https://salmannotkhan.github.io/typing-test/)
 
 ## How to run locally
 
