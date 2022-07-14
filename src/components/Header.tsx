@@ -49,8 +49,8 @@ export default function Header() {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		const theme = localStorage.getItem("theme") || "default";
-		const type = localStorage.getItem("type") || "words";
+		const theme = localStorage.getItem("theme") || "suisei";
+		const type = localStorage.getItem("type") || "words-id";
 		const time = parseInt(localStorage.getItem("time") || "60", 10);
 		import(`wordlists/${type}.json`).then((words) =>
 			dispatch(setWordList(words.default))
