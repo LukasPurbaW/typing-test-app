@@ -53,7 +53,7 @@ export default function Header() {
 		const type = localStorage.getItem("type") || "words-id";
 		const time = parseInt(localStorage.getItem("time") || "60", 10);
 		import(`wordlists/${type}.json`).then((words) =>
-			dispatch(setWordList(words.default))
+			dispatch(setWordList(words))
 		);
 		dispatch(timerSet(time));
 		dispatch(setType(type));
