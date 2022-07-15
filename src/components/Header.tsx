@@ -26,16 +26,7 @@ interface AnimationProps {
 
 export const options: Options = {
 	time: [15, 30, 45, 60, 120],
-	theme: [
-		"suisei",
-		"chloe",
-		"okayu",
-		"iroha",
-		"mori",
-		"kroni",
-		"moona",
-		"kobo",
-	],
+	theme: ["suisei", "chloe", "okayu", "mori"],
 	type: ["words-id", "words-en", "words-jp"],
 };
 
